@@ -1,0 +1,131 @@
+/* ===== Base Styles ===== */
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin:0; padding:0;
+    background: linear-gradient(135deg, #0B0F1A, #172944);
+    color:#F6F8FC;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align:center;
+    padding:3rem 1rem;
+    position: relative;
+}
+.logo-placeholder img {
+    width:120px;
+    margin-bottom:1rem;
+}
+.hero-title {
+    font-size:2.8rem;
+    font-weight:700;
+    letter-spacing:2px;
+    margin:0.5rem 0;
+    /* Placeholder for 3D text effect, يمكن استخدام Spline لاحقًا */
+}
+.hero-subtitle {
+    font-size:1.2rem;
+    color:#E2B06A;
+    margin-bottom:1.5rem;
+}
+.contact-btn {
+    background: linear-gradient(90deg, #E2B06A 20%, #FFD95A 120%);
+    color:#1A2945;
+    padding:0.9rem 2rem;
+    border-radius:25px;
+    font-weight:600;
+    text-decoration:none;
+    display:inline-block;
+    box-shadow: 0 4px 20px rgba(226,176,106,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-btn:hover { transform:translateY(-3px); box-shadow:0 6px 25px rgba(226,176,106,0.5); }
+
+/* ===== Property Cards ===== */
+.property-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap:2rem;
+    padding:2rem;
+}
+.property-card {
+    background:#182740;
+    border-radius:18px;
+    overflow:hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation:cardPopIn 1s;
+}
+.property-card:hover { transform: translateY(-6px); box-shadow:0 8px 32px rgba(226,176,106,0.18); }
+.property-card img {
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    background:#223354;
+}
+.property-info { padding:1rem; text-align:center; }
+.property-id { font-weight:600; color:#E2B06A; }
+.comment-btn {
+    margin-top:0.5rem;
+    padding:0.6rem 1.5rem;
+    border-radius:20px;
+    background:#22438D;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+.comment-btn:hover { background:#E2B06A; color:#203765; }
+
+/* ===== Contact Section ===== */
+#contact-section {
+    background: linear-gradient(135deg, #0B0F1A, #16243B);
+    padding:3rem 2rem;
+    border-radius:15px;
+    margin-top:3rem;
+    box-shadow:0 4px 25px rgba(16,28,44,0.3);
+    text-align:center;
+}
+#contact-section input,
+#contact-section textarea {
+    display:block;
+    width:100%;
+    padding:0.9rem 1rem;
+    margin:1rem auto;
+    border-radius:12px;
+    border:1px solid #274070;
+    background:#212A3F;
+    color:#F6F8FC;
+    font-size:1rem;
+}
+.send-btn {
+    background: linear-gradient(90deg, #E2B06A 20%, #FFD95A 120%);
+    color:#1A2945;
+    font-weight:600;
+    padding:0.9rem 2rem;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    font-size:1.1rem;
+    box-shadow:0 4px 20px rgba(226,176,106,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.send-btn:hover { transform:translateY(-3px); box-shadow:0 6px 25px rgba(226,176,106,0.5); }
+
+/* ===== Animations ===== */
+@keyframes cardPopIn { from {opacity:0; transform:scale(0.97);} to{opacity:1; transform:scale(1);} }
+.btn {
+    display: inline-block;
+    margin: 0.6rem 0;
+    padding: 0.9rem 2.6rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #E2B06A, #c9994d);
+    color: #1a1a1a;
+    box-shadow: 0 8px 20px rgba(226,176,106,0.35);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(226,176,106,0.55);
+}
